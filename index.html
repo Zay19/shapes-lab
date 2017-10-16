@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shapin' Up</title>
+    <link rel="stylesheet" href="style.scss">
+    
+</head>
+<body>
+        <h1>Shape Up or Shape Out!</h1>
+<div id="whole-div">
+
+    <div id="inserts">
+        
+        <div>
+            <p>Rectangle</p>
+            <input id="rectangle-height-input" type="text" placeholder="height">
+            <input id="rectangle-width-input" type="text" placeholder="width">
+            <button id="rect-btn" onclick="makeRectangle()">Insert</button>
+        </div>
+        
+        <div>
+            <p>Square</p>
+            <input id="side-length-input" type="text" placeholder="side length">
+            <button onclick="makeSquare()" id="square-btn">Insert</button>
+        </div>
+       
+        <div>
+            <p>Circle</p>
+            <input id="radius-input" type="text" placeholder="radius">
+            <button onclick="makeCircle()" id="circle-btn">Insert</button>
+        </div>
+       
+        <div>
+            <p> Triangle</p>
+            <input id="triangle-height-input" type="text" placeholder="height">
+            <button id="triangle-btn" onclick="makeTriangle()">Insert</button>
+        </div>
+    </div>
+</div>
+
+    <div id="canvas" class="secondary-color relative float-right border-color-primary">  
+    </div>
+
+    <div id="dimensions">
+            <p id="shape-name">Shape Name:</p>
+            <p id="shape-height">Height:</p>            
+            <p id ="shape-width">Width:</p>
+            <p id="shape-radius">Radius:</p>
+            <p id="shape-area">Area:</p>
+            <p id="shape-perimeter">Perimeter:</p>            
+    </div>
+    <script src="work.js"></script>
+</body>
+</html>
